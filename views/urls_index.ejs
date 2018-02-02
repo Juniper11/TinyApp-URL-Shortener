@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TinyApp</title>
+</head>
+<body>
+    <!-- Add your EJS code here -->
+    <header>
+         <% include ../views/partials/_header %>
+     </header>
+     <TABLE>
+        <TR><TR><TR><TR><TR><TR><TR><TR><TR><TR>
+            <font size="24"><bold><TD>Short URLs</TD></bold><font>
+            <font size="24"><bold><TD>URLs</TD></bold></font>
+         </TR>
+          <% for(var keys in urls) { %>
+          <TR>
+              <TD><%= keys %></TD>
+              <TD><a href="/u/<%= keys %>"><%= urls[keys]['Long_URL'] %></a></TD>
+              <!-- <TD><a href="<%= urls[keys] %>"><%= urls[keys]['Long_URL'] %></a></TD> -->
+              <!-- <TD><a href="<%= urls[keys] %>"><%= urls[keys]['LongURL'] %></a></TD> -->
+                <TD><form action='/urls/<%= keys %>/delete' method='post'><button type='submit'>🗑️</button>
+                    <TD><a href="/urls/<%= keys %>">Edit</a></TD>
+            </form></TD>
+          </TR>
+        <% } %>
+     </TABLE>
+     <font size="4"><a href="/urls/new/">   ADD A URL for Shortening!</a></font>
+</body>
+</html>
+
+
+ 
+   <!-- <% for (let shortURL in urls) { %>
+       <ul>
+           <li><a href=“/u/<%= shortURL %>“><%= shortURL %></a></li>
+           <li><a href=“<%= urls[shortURL].longURL %>“> <%= urls[shortURL].longURL %></a></li>
+       </ul>
+       <form method=“GET” action=“/urls/<%= shortURL %>“><button type=“submit”>Edit</button></form>
+       <form method=“POST” action=“/urls/<%= shortURL %>/delete”><button type=“submit”>:wastebasket:</button></form>
+   <% } %>
+</body>
+</html> -->

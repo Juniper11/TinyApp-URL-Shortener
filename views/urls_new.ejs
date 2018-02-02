@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include partials/_header %>
+  </head>
+  <% if (user) { %>
+    <!-- <%= user.email %> -->
+  <body style="font-size:20px; padding:50px;">
+    <form action="/urls" method="POST" style="margin:150px;">
+      <label for="longURL">Enter a URL:</label>
+      <input id="longURL" type="text" name="longURL" placeholder="http://" style="width: 300px">
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+  <% } %>
+</html>
+
+
+
+
+
+<!-- <% if (user) { %>
+  <%= user.email %>
+  <form action='/logout' method='post'><button type='submit'>logout</button>
+  </form>
+<% } else { %>
+  <a href="/register">SIGN UP NOW</a>
+<% } %>
+</body>
+</html> -->

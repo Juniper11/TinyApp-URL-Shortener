@@ -1,0 +1,19 @@
+<!-- Code below works -->
+<!-- This is the URL for editing new links that belong to a certain user-->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+     <% include partials/_header %>
+  <title>TinyApp - URLs</title>
+</head>
+<body>
+     <form action="/urls/<%= shortURL %>" method="POST">
+        ShortURL: <%= shortURL %>
+        <form action="/urls/<%= shortURL %>" method="POST">
+            <input type="text" size="35" name="longURL" value="<%= longURL%>" placeholder="<%= longURL %>" />
+            <!-- <input type="text" size="35" name="long_URL" value="<%= longURL%>" /> -->
+            <button>update</button>
+        </form>
+    </form>
+</body>
+</html>

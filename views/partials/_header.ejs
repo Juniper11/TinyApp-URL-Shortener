@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <h1>Tiny App</h1>
+    <% if (user) { %>
+      <%= user.email %>
+      <form action='/logout' method='post'><button type='submit'>logout</button>
+      </form>
+    <% } else { %>
+      <a href="/register">SIGN UP NOW</a>
+      <a href="/login">   LOGIN</a>
+    <% } %>
+  </body>
+</html>
