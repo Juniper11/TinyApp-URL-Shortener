@@ -1,5 +1,5 @@
 {
-  "name": "tiny_app",
+  "name": "Tiny-App",
   "version": "1.0.0",
   "description": "",
   "main": "express_server.js",
@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Juniper11/TinyApp2.git"
+    "url": "git+https://github.com/Juniper11/TinyApp-URL-Shortener.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Juniper11/TinyApp2/issues"
+    "url": "https://github.com/Juniper11/TinyApp-URL-Shortener/issues"
   },
-  "homepage": "https://github.com/Juniper11/TinyApp2#readme"
+  "homepage": "https://github.com/Juniper11/TinyApp-URL-Shortener#readme"
 }
